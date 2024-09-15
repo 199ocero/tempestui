@@ -1,0 +1,31 @@
+{
+  "name": "jaocero/tempestui",
+  "description": "TempestUI is a powerful and flexible component library designed for the TALL stack (Tailwind CSS, Alpine.js, Laravel, and Livewire). It provides a collection of reusable, customizable Blade components that streamline development, offering seamless integration with modern Laravel applications.",
+  "type": "library",
+  "license": "MIT",
+  "autoload": {
+    "psr-4": {
+      "JaOcero\\TempestUi\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "Jay-Are Ocero",
+      "email": "freelanceocero@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {
+    "spatie/laravel-package-tools": "^1.16"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "JaOcero\\TempestUi\\TempestUiServiceProvider"
+      ]
+    }
+  },
+  "require-dev": {
+    "laravel/pint": "^1.17"
+  }
+}
