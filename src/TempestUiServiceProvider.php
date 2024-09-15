@@ -2,6 +2,7 @@
 
 namespace JaOcero\TempestUi;
 
+use JaOcero\TempestUi\Components\Button;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -11,6 +12,9 @@ class TempestUiServiceProvider extends PackageServiceProvider
     {
         $package
             ->name('tempestui')
-            ->hasViews();
+            ->hasViews()
+            ->hasViewComponents('tempestui', ...[
+                Button::class,
+            ]);
     }
 }
