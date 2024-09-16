@@ -1,6 +1,6 @@
 {
   "name": "jaocero/tempestui",
-  "description": "TempestUI is a powerful and flexible component library designed for the TALL stack (Tailwind CSS, Alpine.js, Laravel, and Livewire). It provides a collection of reusable, customizable Blade components that streamline development, offering seamless integration with modern Laravel applications.",
+  "description": "TempestUI is a powerful and flexible component library designed for the TALL stack (Tailwind CSS, Alpine.js, Laravel, and Livewire), and its components are based on ShadCN.",
   "type": "library",
   "license": "MIT",
   "autoload": {
