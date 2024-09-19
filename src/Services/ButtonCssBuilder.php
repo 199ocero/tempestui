@@ -7,7 +7,7 @@ use JaOcero\TempestUi\Enums\Variants;
 
 class ButtonCssBuilder
 {
-    public static function button(string $variant, string $size): string
+    public static function button(string $variant): string
     {
         return match ($variant) {
             Variants::PRIMARY->value => 'tempestui-button-primary font-medium rounded-lg',
@@ -21,7 +21,7 @@ class ButtonCssBuilder
     {
         return match ($variant) {
             Variants::PRIMARY->value => 'bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 hover:bg-zinc-800 dark:hover:bg-zinc-200 transition duration-300 ease-in-out',
-            Variants::SECONDARY->value => 'bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-white dark:hover:bg-zinc-900 transition duration-300 ease-in-out',
+            Variants::SECONDARY->value => 'bg-zinc-100 hover:bg-zinc-100/60 dark:bg-zinc-800 text-zinc-900 dark:text-white dark:hover:bg-zinc-900 transition duration-300 ease-in-out',
             Variants::DESTRUCTIVE->value => 'bg-red-500 dark:bg-red-800 text-white hover:bg-red-500/90 dark:hover:bg-red-900 transition duration-300 ease-in-out',
             default => 'bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 hover:bg-zinc-800 dark:hover:bg-zinc-200 transition duration-300 ease-in-out',
         };
@@ -30,10 +30,10 @@ class ButtonCssBuilder
     public static function buttonSize(string $size): string
     {
         return match ($size) {
-            Sizes::SMALL->value => 'text-xs px-4 py-2 rounded-lg',
-            Sizes::MEDIUM->value => 'text-sm px-4 py-2 rounded-lg',
-            Sizes::LARGE->value => 'text-base px-4 py-2 rounded-lg',
-            default => 'text-sm px-4 py-2 rounded-lg',
+            Sizes::SMALL->value => 'text-xs px-4 py-2',
+            Sizes::MEDIUM->value => 'text-sm px-4 py-2',
+            Sizes::LARGE->value => 'text-base px-4 py-2',
+            default => 'text-sm px-4 py-2',
         };
     }
 }
