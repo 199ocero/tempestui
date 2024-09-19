@@ -27,9 +27,9 @@ class Button extends Component
     public function render(): View|Closure|string
     {
         return view('tempestui::components.button', [
-            'button' => ButtonCssBuilder::button($this->variant, $this->size),
-            'buttonVariant' => ButtonCssBuilder::buttonVariant($this->variant),
-            'buttonSize' => ButtonCssBuilder::buttonSize($this->size),
+            'buttonCss' => ButtonCssBuilder::buttonCss($this->variant, $this->size),
+            'buttonVariantCss' => ButtonCssBuilder::buttonVariantCss($this->variant),
+            'buttonSizeCss' => ButtonCssBuilder::buttonSizeCss($this->size),
         ]);
     }
 }

@@ -1,3 +1,3 @@
-<button {{ $attributes->class([$button, $buttonVariant, $buttonSize]) }}>
+<button {{ $attributes->class([$buttonCss, $buttonVariantCss, $buttonSizeCss]) }}>
     {{ $slot }}
 </button>

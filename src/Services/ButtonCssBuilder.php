@@ -7,7 +7,7 @@ use JaOcero\TempestUi\Enums\Variants;
 
 class ButtonCssBuilder
 {
-    public static function button(string $variant): string
+    public static function buttonCss(string $variant): string
     {
         return match ($variant) {
             Variants::PRIMARY->value => 'tempestui-button-primary font-medium rounded-lg',
@@ -20,7 +20,7 @@ class ButtonCssBuilder
         };
     }
 
-    public static function buttonVariant(string $variant): string
+    public static function buttonVariantCss(string $variant): string
     {
         return match ($variant) {
             Variants::PRIMARY->value => 'bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 hover:bg-zinc-800 dark:hover:bg-zinc-200 transition duration-300 ease-in-out',
@@ -33,7 +33,7 @@ class ButtonCssBuilder
         };
     }
 
-    public static function buttonSize(string $size): string
+    public static function buttonSizeCss(string $size): string
     {
         return match ($size) {
             Sizes::SMALL->value => 'text-xs px-4 py-2',
