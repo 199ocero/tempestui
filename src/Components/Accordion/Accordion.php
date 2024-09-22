@@ -26,6 +26,6 @@ class Accordion extends Component
      */
     public function render(): View|Closure|string
     {
-        return view('tempestui::components.accordion.accordion');
+        return view('tempestui::components.accordion.index');
     }
 }
